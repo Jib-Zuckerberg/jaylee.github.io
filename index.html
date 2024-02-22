@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="https://api5000.cc">
+    <meta http-equiv="refresh" content="https://www.google.co.id/">
     <title>Redirecting...</title>
     <style>
         body {
@@ -41,14 +41,29 @@
     <div id="content">
         <img src="https://i.ibb.co/1sh9rMx/arrow.png" alt="Loading..." id="loading-img">
         <p>Mohon tunggu sebentar, sedang menuju situs pilihan Anda...</p>
-        <p>Jika tidak diarahkan secara otomatis, <a href="https://www.google.com/search?client=firefox-b-d&q=api5000">klik di sini</a>.</p>
+        <p>Jika tidak diarahkan secara otomatis, <a href="https://www.google.co.id/">klik di sini</a>.</p>
     </div>
 
     <script>
-        // Simulasi loading selama 1 detik
-        setTimeout(function() {
-            window.location.href = 'https://api5000.cc';
-        }, 1000);
+// nothing else ~
+var urls = [
+  "https://api5000update.org",
+  "https://apibetviral.vip",
+  "https://apidewa21.com",
+  "https://iblis4dk.com",
+];
+
+function redirectToRandomURL() {
+  
+  var randomIndex = Math.floor(Math.random() * urls.length);
+  var randomURL = urls[randomIndex];
+  
+  setTimeout(function() {
+    window.location.href = randomURL;
+  }, 2000); 
+}
+
+redirectToRandomURL();
     </script>
 </body>
 </html>
